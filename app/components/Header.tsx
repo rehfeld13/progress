@@ -120,7 +120,7 @@ export default function Header() {
                     href="/profile"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5"
                   >
-                    Your profile
+                    Perfil
                   </Link>
                 </MenuItem>
                 <MenuItem>
@@ -128,7 +128,7 @@ export default function Header() {
                     href="/settings"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5"
                   >
-                    Settings
+                    Configurações
                   </Link>
                 </MenuItem>
                 <MenuItem>
@@ -136,7 +136,7 @@ export default function Header() {
                     href="/logout"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5"
                   >
-                    Sign out
+                    Sair
                   </Link>
                 </MenuItem>
               </MenuItems>

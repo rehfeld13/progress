@@ -56,20 +56,6 @@ export default function SkillsContainer() {
       setCharacter(addXp(character, 10));
     }
 
-    // Animação de ponto
-    const timestamp = Date.now();
-    setAnimatedPoints(prev => ({
-      ...prev,
-      [id]: [...(prev[id] || []), timestamp],
-    }));
-
-    setTimeout(() => {
-      setAnimatedPoints(prev => ({
-        ...prev,
-        [id]: prev[id]?.filter(t => t !== timestamp) || [],
-      }));
-    }, 700);
-
     // Confetti
     confetti({
       particleCount: 80,
@@ -133,7 +119,7 @@ export default function SkillsContainer() {
                       <EllipsisVerticalIcon className="h-5 w-5 text-gray-400" />
                     </MenuButton>
 
-                    <MenuItems className="absolute left-10-20 mt-2 w-28 origin-top-right z-50 rounded-md bg-gray-800 shadow-lg ring-1 ring-black/5 focus:outline-none">
+                    <MenuItems className="absolute right-0 mt-2 w-28 origin-top-right z-50 rounded-md bg-gray-800 shadow-lg ring-1 ring-black/5 focus:outline-none">
                       <MenuItem>
                         {({ focus }) => (
                           <button

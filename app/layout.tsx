@@ -43,7 +43,10 @@ export default function RootLayout({
         </div>
         <Providers>
           <Header />
-          {children}
+
+          <div className="container mx-auto p-4">
+           {children}
+          </div>
         </Providers>
       </body>
     </html>
