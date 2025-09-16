@@ -1,7 +1,7 @@
 "use client";
 
 import { Goal, Character } from "@/app/lib/types";
-import { addXp } from "@/app/lib/xp";
+import { useAddXp } from "@/app/hooks/useAddXp";
 import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import confetti from "canvas-confetti";
@@ -20,13 +20,14 @@ export default function GoalCard({
   setCharacter: (c: Character) => void;
 }) {
   const [scale, setScale] = useState(1);
+  const addXp = useAddXp(character, setCharacter);
 
   const handleAddDay = () => {
     if (goal.progress < goal.target) {
       const updated = { ...goal, progress: goal.progress + 1 };
       onUpdate(updated);
 
-      if (character) setCharacter(addXp(character, 10));
+      addXp(10);
 
       setScale(1.2);
       confetti({

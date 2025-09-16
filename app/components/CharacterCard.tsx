@@ -2,7 +2,7 @@
 
 import { Character } from "@/app/lib/types";
 import Image from "next/image";
-import { getNextLevelXp } from "@/app/lib/xp";
+import { getNextLevelXp } from "../hooks/useAddXp";
 
 export default function CharacterCard({ character }: { character: Character }) {
   const nextLevelXp = getNextLevelXp(character.level);
