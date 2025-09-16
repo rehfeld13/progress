@@ -1,8 +1,8 @@
 "use client";
 
 import CharacterCard from "@/app/components/CharacterCard";
-import Skills from "./components/Skills";
 import { useCharacter } from "./context/CharacterContext";
+import GoalsContainer from "./components/goals/GoalsContainer";
 
 export default function Home() {
   const { character } = useCharacter();
@@ -13,7 +13,7 @@ export default function Home() {
       
       {character && <CharacterCard character={character} />}
       
-      <Skills />
+      <GoalsContainer />
     </main>
   );
 }

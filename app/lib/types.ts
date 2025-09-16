@@ -6,10 +6,11 @@ export type Character = {
   inventory: StoreItem[];
 };
 
-export type Skill = {
+export type Goal = {
   id: string;
   name: string;
   progress: number;
+  target: number;    
 };
 
 export type StoreItem = {
