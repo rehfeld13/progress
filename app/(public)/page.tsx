@@ -1,8 +1,8 @@
 "use client";
 
 import CharacterCard from "@/app/components/CharacterCard";
-import { useCharacter } from "./context/CharacterContext";
-import GoalsContainer from "./components/goals/GoalsContainer";
+import { useCharacter } from "../context/CharacterContext";
+import GoalsContainer from "../components/goals/GoalsContainer";
 
 export default function Home() {
   const { character } = useCharacter();

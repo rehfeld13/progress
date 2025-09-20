@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
-import { Providers } from "./providers";
+import "../globals.css";
+import Header from "../components/Header";
+import { Providers } from "../providers";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative `}>
         <div aria-hidden="true" className="fixed inset-x-0 -top-40 -z-50 transform-gpu overflow-hidden blur-3xl sm:-top-80">
         <div
           style={{
@@ -45,7 +45,7 @@ export default function RootLayout({
         <Providers>
           <Header />
 
-          <div className="container mx-auto p-4">
+          <div className="container mx-auto p-4 ">
            <Toaster position="top-right" />
            {children}
           </div>
