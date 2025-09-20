@@ -1,8 +1,8 @@
-# GoalFeld
+# Progressum
 
 ## Visão Geral
 
-O **GoalFeld** é uma aplicação web desenvolvida em **Next.js 15 (App Router)** com **TypeScript** e **TailwindCSS**. O objetivo é permitir que o usuário acompanhe seu personagem, habilidades e progresso em diversas áreas da vida.
+O **Progressum** é uma aplicação web desenvolvida em **Next.js 15 (App Router)** com **TypeScript** e **TailwindCSS**. O objetivo é permitir que o usuário acompanhe seu personagem, habilidades e progresso em diversas áreas da vida.
 
 ### Principais Funcionalidades
 
