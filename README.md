@@ -1,5 +1,11 @@
 # Progressum
 
+<p align="center">
+<a href="https://github.com/progressumApp" target="_blank">
+  <img width="300" height="300" alt="Progressum Logo" src="https://github.com/user-attachments/assets/a51a509d-4caa-4e16-a056-98674d069ef7" />
+</a>
+</p>
+
 ## Visão Geral
 
 O **Progressum** é uma aplicação web desenvolvida em **Next.js 15 (App Router)** com **TypeScript** e **TailwindCSS**. O objetivo é permitir que o usuário acompanhe seu personagem, habilidades e progresso em diversas áreas da vida.
