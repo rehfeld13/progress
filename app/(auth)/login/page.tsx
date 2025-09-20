@@ -2,18 +2,27 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { login } from "@/lib/api/auth";
+import { useRouter } from "next/navigation";
+import { setAuthToken } from "@/lib/token";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError("");
+
     try {
-      // chamada de login futura
-    } catch (err) {
-      setError("Email ou senha inválidos");
+      const data = await login(email, password);
+      await setAuthToken(data.token);
+
+      router.push("/");
+    } catch (err: any) {
+      setError(err.message);
     }
   };
 

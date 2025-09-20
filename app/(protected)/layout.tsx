@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "@/components/Header";
 import { Providers } from "../providers";
 import { Toaster } from "react-hot-toast";
+import { requireAuth } from "@/lib/token";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +21,14 @@ export const metadata: Metadata = {
   description: "Um aplicativo para acompanhar seu progresso em várias áreas da vida.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  await requireAuth();
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative `}>
