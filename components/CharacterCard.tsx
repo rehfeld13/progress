@@ -9,7 +9,7 @@ export default function CharacterCard({ character }: { character: Character }) {
   const xpPercentage = Math.min((character.xp / nextLevelXp) * 100, 100);
 
   return (
-    <div className="p-4 border flex rounded items-center shadow bg-gray-950/50 mb-6 flex-col sm:flex-row">
+    <div className="p-4 border border-b-0 border-gray-800/40 flex rounded-t-4xl items-center shadow bg-gray-950/40 flex-col sm:flex-row">
       <div>
         <Image
           src="/player.png"

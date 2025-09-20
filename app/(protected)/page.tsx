@@ -8,8 +8,8 @@ export default function Home() {
   const { character } = useCharacter();
 
   return (
-    <main className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Meu Personagem</h1>
+    <main className="flex flex-col px-4 sm:px-24">
+      <h1 className="text-2xl font-bold mb-6">Início</h1>
       
       {character && <CharacterCard character={character} />}
       
