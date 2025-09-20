@@ -18,13 +18,13 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-16 gap-12 bg-gray-800/50">
+    <main className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 py-16 md:px-16 md:py-0 gap-12">
       {/* Hero Section */}
       <div className="text-center md:text-left md:flex-1 max-w-lg">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
           Metas claras no presente
           <br />
-          <span className="text-purple-600">Transformam-se em progresso no futuro</span>
+          <span className="text-purple-400">Transformam-se em progresso no futuro</span>
         </h1>
         <p className="mt-6 text-lg text-gray-300">
           Conquiste seu progresso diário com nossa plataforma de desenvolvimento pessoal baseada em metas.
@@ -35,7 +35,7 @@ export default function LoginPage() {
       <div className="flex-1 flex justify-center w-full max-w-md">
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 bg-gray-900/40 backdrop-blur p-8 rounded-lg w-full shadow-lg"
+          className="space-y-6 bg-gray-950/50 backdrop-blur p-8 rounded-lg w-full shadow-lg"
         >
           {/* Logo */}
           <div className="sm:mx-auto sm:w-full sm:max-w-sm mb-6">
@@ -80,7 +80,7 @@ export default function LoginPage() {
                 Senha
               </label>
               <div className="text-sm">
-                <a href="#" className="font-semibold text-indigo-400 hover:text-indigo-300">
+                <a href="#" className="font-semibold text-purple-400 hover:text-purple-300">
                   Esqueceu a senha?
                 </a>
               </div>
@@ -103,7 +103,7 @@ export default function LoginPage() {
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm/6 font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              className="flex w-full justify-center rounded-md bg-purple-500 px-3 py-2 text-sm/6 font-semibold text-white hover:bg-purple-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >
               Entrar
             </button>
@@ -112,7 +112,7 @@ export default function LoginPage() {
           {/* Footer */}
           <p className="mt-6 text-center text-sm/6 text-gray-400">
             Não possue uma conta?{" "}
-            <a href="#" className="font-semibold text-indigo-400 hover:text-indigo-300">
+            <a href="#" className="font-semibold text-purple-400 hover:text-purple-300">
               Registrar
             </a>
           </p>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import Header from "../components/Header";
+import Header from "@/components/Header";
 import { Providers } from "../providers";
 import { Toaster } from "react-hot-toast";
 
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Progress",
+  title: "Progressum",
   description: "Um aplicativo para acompanhar seu progresso em várias áreas da vida.",
 };
 

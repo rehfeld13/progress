@@ -1,6 +1,6 @@
 "use client";
 
-import { Character } from "@/app/lib/types";
+import { Character } from "@/lib/types";
 import Image from "next/image";
 import { getNextLevelXp } from "../hooks/useAddXp";
 
@@ -9,7 +9,7 @@ export default function CharacterCard({ character }: { character: Character }) {
   const xpPercentage = Math.min((character.xp / nextLevelXp) * 100, 100);
 
   return (
-    <div className="p-4 border flex rounded items-center shadow bg-gray-800/50 mb-6 flex-col sm:flex-row">
+    <div className="p-4 border flex rounded items-center shadow bg-gray-950/50 mb-6 flex-col sm:flex-row">
       <div>
         <Image
           src="/player.png"
@@ -24,8 +24,8 @@ export default function CharacterCard({ character }: { character: Character }) {
       <div className="w-full sm:w-2/3 flex flex-col gap-2">
         <h2 className="text-xl font-bold">{character.name}</h2>
         <div className="flex items-center justify-between">
-          <p>Nível: {character.level}</p>
-          <p>Próx: {character.level + 1}</p>
+          <p className="text-sm/6">Nível: {character.level}</p>
+          <p className="text-sm/6">Próx: {character.level + 1}</p>
         </div>
         
         <div className="w-full bg-gray-700 rounded-full h-4 mt-2 overflow-hidden">

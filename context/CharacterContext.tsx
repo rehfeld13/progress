@@ -1,8 +1,8 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect } from "react";
-import { Character } from "@/app/lib/types";
-import { loadData, saveData } from "@/app/lib/storage";
+import { Character } from "@/lib/types";
+import { loadData, saveData } from "@/lib/storage";
 
 type CharacterContextType = {
   character: Character | null;

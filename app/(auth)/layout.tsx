@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Progress",
+  title: "Progressum",
   description: "Um aplicativo para acompanhar seu progresso em várias áreas da vida.",
 };
 
