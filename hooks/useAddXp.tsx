@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import { Character } from "@/app/lib/types";
-import { XpToast, LevelUpToast, CoinToast } from "@/app/components/toasts";
+import { Character } from "@/lib/types";
+import { XpToast, LevelUpToast, CoinToast } from "@/components/toasts";
 import toast from "react-hot-toast";
 
 export const xpTable = [0, 100, 250, 500, 1000];

@@ -1,7 +1,7 @@
 "use client";
 
-import { Goal, Character } from "@/app/lib/types";
-import { useAddXp } from "@/app/hooks/useAddXp";
+import { Goal, Character } from "@/lib/types";
+import { useAddXp } from "@/hooks/useAddXp";
 import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import confetti from "canvas-confetti";
@@ -47,8 +47,12 @@ export default function GoalCard({
   };
 
   return (
-    <div className="relative w-[90%] p-4 mb-6 rounded-[10px] shadow-md bg-gray-800/60 overflow-hidden flex flex-col gap-6 items-center mx-auto">
-      
+    <div 
+      className="relative w-[90%] p-4 mb-6 rounded-[10px] shadow-md
+      bg-gradient-to-b from-gray-800/60 to-gray-900/60
+      backdrop-blur-sm border border-white/5
+      overflow-hidden flex flex-col gap-6 items-center mx-auto"
+    >
       <div className="relative z-10 flex w-full items-center justify-between bg-black/40 px-2 py-1 rounded-[6px]">
         <h3
           className="text-purple-300 font-semibold text-base break-words"
